@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL-Shortner</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            width: 90px;
+            height: 30px;
+            margin-bottom: 30px;
+
+        }
+
+        .container {
+            margin-bottom: 100px;
+        }
+
+        .account {
+            display: flex;
+        }
+        button{
+            border: 0px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Url-Shortner</h1>
+        <h2>Please Login/Signup to account</h2>
+    </div>
+
+    <div class="account">
+        <form action="/move/signup" method="get">
+            <button type="submit" action style="margin: 10px;background-color: rgb(170, 171, 173);">
+        </form>
+        Signup
+        </button></form>
+        <form action="/move/login" method="get">
+            <button type="submit" style="margin: 10px;background-color: rgba(30, 108, 233, 0.8);color: white;">
+
+                Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
