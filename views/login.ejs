@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 28px;
+            letter-spacing: 1px;
+            height: 90vh;
+        }
+
+        .container {
+            width: 450px;
+            height: 500px;
+            border: 1px solid black;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="margin: 50px;">Login</h1>
+
+        <form action="/user/login" method="post">
+            <label>Full Name: </label>
+            <input type="text" name="name" required><br>
+            <label>Email: </label>
+            <input type="text" name="email" required><br>
+            <label>Password: </label>
+            <input type="text" name="password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <% if (locals.error) { %>
+            <script>
+                alert("<%= error %>");
+            </script>
+            <% } %>
+    </div>
+</body>
+
+</html>
